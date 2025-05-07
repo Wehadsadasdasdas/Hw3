@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 125px;
+}
+
+.container {
+    border: thin solid #ddd;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 410px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 31px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.flag {
+    width: 10px;
+}
+
+.input-password {
+    display: block;
+    width: 85%;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.input-email {
+    display: block;
+    width: 85%;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    background-color: #0844b4;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-outline {
+    width: 100%;
+    background-color: white;
+    color: #000000;
+    padding: 16px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.divider {
+    margin: 10px 0;
+    color: #999;
+    font-size: 17px;
+}
+
+.link {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 35px;
+    color: #0844b4;
+    text-align: left;
+    font-weight: bold;
+}
+
+.link-change {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #0844b4;
+    text-align: left;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 18px;
+    display: block;
+    color: #0844b4;
+    text-align: left;
+    font-weight: bold;
+}
+
+.or-divider {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+    text-align: center; /* Center the text horizontally if needed */
+    margin: 20px 0; /* Adjust margin as needed */
+    color: #999; /* Color for the text */
+    font-size: 14px; /* Size for the text */
+    font-weight: bold;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: ''; /* Essential for pseudo-elements */
+    flex-grow: 1; /* Makes the pseudo-element grow to fill space */
+    height: 1px; /* Thickness of the line */
+    background-color: #ccc; /* Color of the line */
+    margin: 0 1px; /* Space between the line and the text */
+}
+
+/* Optional: Style the text span if needed, though color/size can be on parent */
+.or-divider span {
+    padding: 0 10px; /* Add padding around the text if the lines butt up against it */
+    /* You could use your original .divider styles here if preferred */
+    /* color: #999; */
+    /* font-size: 18px; */
+}
+
+.language {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 15px;
+    color: #666;
+    display: flex; /* Use flexbox to arrange children horizontally */
+    align-items: center; /* Vertically center the image and list */
+    justify-content: center; /* Center the content block (image + list) */
+}
+
+.language .flag {
+    margin-right: 10px; /* Add some space between the flag and the list */
+    width: 25px;
+}
+
+.language ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Arrange list items horizontally */
+    align-items: center; /* Vertically align list items */
+}
+
+.language li {
+    /* Items are already aligned by parent flex */
+    padding: 0 5px; /* Add padding for spacing between languages */
+    /* Add a separator after each item except the last */
+    position: relative; /* Needed for pseudo-element positioning if used */
+}
+
+.language li:not(:last-child)::after {
+    content: '|'; /* The separator character */
+    margin-left: 10px; /* Space between the language text and the separator */
+}
+
+.email-container {
+    display: flex;
+    gap: 10px; /* Adjust spacing between email and link */
+}
+
+.error-container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.logo-error {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}

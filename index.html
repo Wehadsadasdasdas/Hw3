@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPal Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <img src="Paypal.png" alt="PayPal Logo" class="logo">
+  <input type="text" placeholder="Email or mobile number" class="input-email">
+  <a href="error.html" class="link">Forgot email?</a>
+  <button class="btn" onclick="next()">Next</button>
+  <div class="or-divider">
+    <span>Or</span>
+  </div>
+  <button class="btn-outline" onclick="signup()">Sign Up</button>
+  <div class="language">
+    <img src = america.png alt="flag Logo" class="flag">
+    <ul>
+      <li>English</li>
+      <li>Français</li>
+      <li>Español</li>
+      <li>中文</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function next() {
+    // Get the email input element
+    const emailInput = document.querySelector('.input-email'); // Assuming 'input' is the class for the email field
+    const emailValue = emailInput.value; // Get the value entered by the user
+
+    if (!emailValue) {
+      alert("Please enter your email or mobile number.");
+      return;
+    }
+    // Store the email in sessionStorage
+    sessionStorage.setItem('userEmail', emailValue);
+
+    // Navigate to the next page
+    window.location.href = "password.html";
+  }
+
+  function signup() {
+    window.location.href = "error.html";
+  }
+</script>
+</body>
+</html>
